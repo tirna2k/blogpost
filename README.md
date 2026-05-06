@@ -1,22 +1,17 @@
-# Deno Project
+# Fresh project
 
-A small TypeScript starter project for Deno.
+Your new Fresh project is ready to go. You can follow the Fresh "Getting
+Started" guide here: https://fresh.deno.dev/docs/getting-started
 
-## Requirements
+### Usage
 
-- Deno
+Make sure to install Deno:
+https://docs.deno.com/runtime/getting_started/installation
 
-## Commands
+Then start the project in development mode:
 
-```powershell
-deno task start
+```
 deno task dev
-deno task test
-deno task check
 ```
 
-## Structure
-
-- `main.ts` contains the starter program.
-- `main_test.ts` contains unit tests.
-- `deno.json` defines tasks, imports, and TypeScript settings.
+This will watch the project directory and restart as necessary.

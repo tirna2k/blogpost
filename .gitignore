@@ -1,13 +1,13 @@
-# Deno
-deno.lock
-
-# Environment
+# dotenv environment variable files
 .env
-.env.*
-!.env.example
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
 
-# Editor and OS files
-.vscode/
-.idea/
-.DS_Store
-Thumbs.db
+# Fresh build directory
+_fresh/
+# npm + other dependencies
+node_modules/
+vendor/
+

@@ -1,0 +1,16 @@
+{
+  "tasks": {
+    "dev": "deno run --watch --allow-read=index.html --allow-net main.ts",
+    "start": "deno run --allow-read=index.html --allow-net main.ts",
+    "test": "deno test --allow-read=index.html",
+    "fmt": "deno fmt",
+    "lint": "deno lint",
+    "check": "deno fmt --check && deno lint && deno test --allow-read=index.html"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1"
+  },
+  "compilerOptions": {
+    "strict": true
+  }
+}

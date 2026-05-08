@@ -28,6 +28,10 @@ export default define.page(function Home() {
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Newsreader:ital,wght@0,500;0,600;1,500&display=swap"
           rel="stylesheet"
         />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+          rel="stylesheet"
+        />
       </Head>
 
       <header class="site-header">
@@ -37,6 +41,9 @@ export default define.page(function Home() {
             <a href="#archive">Archive</a>
             <a href="#contact">Contact</a>
           </nav>
+          <button class="account-button" type="button" aria-label="Account">
+            <span class="material-symbols-outlined">account_circle</span>
+          </button>
         </div>
       </header>
 

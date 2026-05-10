@@ -1,34 +1,6 @@
 import { Head } from "fresh/runtime";
 import { define } from "../utils.ts";
 
-function AccountIcon() {
-  return (
-    <svg
-      class="icon-svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      aria-hidden="true"
-    >
-      <path
-        d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z"
-        stroke="currentColor"
-        stroke-width="1.8"
-      />
-      <path
-        d="M8.2 18.2a4.6 4.6 0 0 1 7.6 0"
-        stroke="currentColor"
-        stroke-linecap="round"
-        stroke-width="1.8"
-      />
-      <path
-        d="M12 12.7a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
-        stroke="currentColor"
-        stroke-width="1.8"
-      />
-    </svg>
-  );
-}
-
 const heroImage =
   "https://lh3.googleusercontent.com/aida-public/AB6AXuCzNAd3ukaZ0GXj5xMQiMxX9xiVvwkQJfBPEcA6lVXjMWzXvGktP2EbrVSYvIhqjm2pEh73VEqlrsU0proF6RuXfy-PupWersw8XLqV6XpgAsaN0_gdIsQ9Xk3-OZlYk1MvJ4VBKUv9LmpZqNaxNW58crDJOI3b1GHWx-sILfaJmYC3CNdAWJApvCwmCWEBZl44_T5BWeeOkEurjOnaxVJ0Qk4nd9d6HCfNem3aqp4rzA60G5Q5EblQz2B8sMDot8XB_evWe0f-io8";
 
@@ -45,7 +17,7 @@ export default define.page(function Home() {
   return (
     <>
       <Head>
-        <title>The journal By Tirna - Home</title>
+        <title>The Journal by Tirna - Home</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -64,14 +36,11 @@ export default define.page(function Home() {
 
       <header class="site-header">
         <div class="header-inner">
-          <a class="brand" href="/">The journal By Tirna</a>
+          <a class="brand" href="/">The Journal by Tirna</a>
           <nav class="top-nav" aria-label="Primary navigation">
             <a href="/archive">Archive</a>
             <a href="#contact">Contact</a>
           </nav>
-          <button class="account-button" type="button" aria-label="Account">
-            <AccountIcon />
-          </button>
         </div>
       </header>
 
@@ -161,7 +130,7 @@ export default define.page(function Home() {
       </main>
 
       <footer class="site-footer" id="contact">
-        <div class="footer-brand">The journal By Tirna</div>
+        <div class="footer-brand">The Journal by Tirna</div>
         <nav class="footer-nav" aria-label="Footer navigation">
           <a href="#">Privacy Policy</a>
           <a href="#contact">Contact</a>

@@ -7,7 +7,7 @@ export default define.page(function App({ Component }) {
       <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>The journal By Tirna</title>
+        <title>The Journal by Tirna</title>
         <link rel="stylesheet" href="/styles.css" />
       </head>
       <body>

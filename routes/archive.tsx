@@ -99,7 +99,7 @@ export default define.page(function Archive() {
   return (
     <>
       <Head>
-        <title>The journal By Tirna - Archive</title>
+        <title>The Journal by Tirna - Archive</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -118,7 +118,7 @@ export default define.page(function Archive() {
 
       <header class="site-header">
         <div class="header-inner">
-          <a class="brand" href="/">The journal By Tirna</a>
+          <a class="brand" href="/">The Journal by Tirna</a>
           <nav class="top-nav" aria-label="Primary navigation">
             <a class="active" href="/archive">Archive</a>
             <a href="#contact">Contact</a>
@@ -168,7 +168,7 @@ export default define.page(function Archive() {
       </main>
 
       <footer class="site-footer" id="contact">
-        <div class="footer-brand">The journal By Tirna</div>
+        <div class="footer-brand">The Journal by Tirna</div>
         <nav class="footer-nav" aria-label="Footer navigation">
           <a href="#">Privacy Policy</a>
           <a href="#contact">Contact</a>

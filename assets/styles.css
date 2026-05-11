@@ -481,7 +481,6 @@ button {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-bottom: 80px;
 }
 
 .archive-card {
@@ -569,16 +568,107 @@ button {
   -webkit-box-orient: vertical;
 }
 
-.load-more-row {
-  display: flex;
-  justify-content: center;
+.contact-shell {
+  flex: 1;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 80px 24px;
 }
 
-.load-more-button {
-  padding: 12px 32px;
-  border: 1px solid #2a2a2a;
-  border-radius: 9999px;
-  color: #fff;
+.contact-intro {
+  max-width: 768px;
+  margin-bottom: 80px;
+}
+
+.contact-intro h1 {
+  color: #e5e2e1;
+  font-family: Newsreader, serif;
+  font-size: 64px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.1;
+}
+
+.contact-intro p {
+  max-width: 672px;
+  margin-top: 16px;
+  color: #c4c7c8;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.contact-form {
+  display: flex;
+  width: 100%;
+  max-width: 576px;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field label {
+  margin-bottom: 8px;
+  color: #c4c7c8;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.form-field input {
+  width: 100%;
+  padding: 8px 0;
+  border: 0;
+  border-bottom: 1px solid #2a2a2a;
+  border-radius: 0;
+  background: transparent;
+  color: #e5e2e1;
+  font: inherit;
+  font-size: 16px;
+  line-height: 1.6;
+  outline: none;
+  transition: border-color 150ms ease;
+}
+
+.form-field input::placeholder {
+  color: #353535;
+}
+
+.form-field input:focus {
+  border-bottom-color: #e5e2e1;
+}
+
+.form-field input:-webkit-autofill,
+.form-field input:-webkit-autofill:hover,
+.form-field input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px #131313 inset;
+  -webkit-text-fill-color: #e5e2e1;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.submit-row {
+  padding-top: 16px;
+}
+
+.contact-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  background: #fff;
+  color: #2f3131;
   cursor: pointer;
   font-size: 12px;
   font-weight: 700;
@@ -588,8 +678,8 @@ button {
   transition: background-color 300ms ease;
 }
 
-.load-more-button:hover {
-  background: #2a2a2a;
+.contact-submit:hover {
+  background: #c6c6c7;
 }
 
 @media (max-width: 900px) {
@@ -634,6 +724,15 @@ button {
   }
 
   .archive-intro {
+    margin-bottom: 56px;
+  }
+
+  .contact-shell {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .contact-intro {
     margin-bottom: 56px;
   }
 }
@@ -689,6 +788,10 @@ button {
   }
 
   .archive-intro h1 {
+    font-size: 44px;
+  }
+
+  .contact-intro h1 {
     font-size: 44px;
   }
 

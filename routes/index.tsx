@@ -39,7 +39,7 @@ export default define.page(function Home() {
           <a class="brand" href="/">The Journal by Tirna</a>
           <nav class="top-nav" aria-label="Primary navigation">
             <a href="/archive">Archive</a>
-            <a href="#contact">Contact</a>
+            <a href="/contact">Contact</a>
           </nav>
         </div>
       </header>
@@ -133,7 +133,7 @@ export default define.page(function Home() {
         <div class="footer-brand">The Journal by Tirna</div>
         <nav class="footer-nav" aria-label="Footer navigation">
           <a href="#">Privacy Policy</a>
-          <a href="#contact">Contact</a>
+          <a href="/contact">Contact</a>
           <a href="/archive">Archives</a>
         </nav>
         <div class="copyright">

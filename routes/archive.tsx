@@ -1,57 +1,6 @@
 import { Head } from "fresh/runtime";
 import { define } from "../utils.ts";
 
-function SearchIcon() {
-  return (
-    <svg
-      class="icon-svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      aria-hidden="true"
-    >
-      <path
-        d="m20 20-4.4-4.4"
-        stroke="currentColor"
-        stroke-linecap="round"
-        stroke-width="1.8"
-      />
-      <path
-        d="M10.8 18a7.2 7.2 0 1 0 0-14.4 7.2 7.2 0 0 0 0 14.4Z"
-        stroke="currentColor"
-        stroke-width="1.8"
-      />
-    </svg>
-  );
-}
-
-function AccountIcon() {
-  return (
-    <svg
-      class="icon-svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      aria-hidden="true"
-    >
-      <path
-        d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z"
-        stroke="currentColor"
-        stroke-width="1.8"
-      />
-      <path
-        d="M8.2 18.2a4.6 4.6 0 0 1 7.6 0"
-        stroke="currentColor"
-        stroke-linecap="round"
-        stroke-width="1.8"
-      />
-      <path
-        d="M12 12.7a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
-        stroke="currentColor"
-        stroke-width="1.8"
-      />
-    </svg>
-  );
-}
-
 const archiveItems = [
   {
     month: "OCT",
@@ -110,10 +59,6 @@ export default define.page(function Archive() {
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,600&display=swap"
           rel="stylesheet"
         />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-          rel="stylesheet"
-        />
       </Head>
 
       <header class="site-header">
@@ -121,16 +66,8 @@ export default define.page(function Archive() {
           <a class="brand" href="/">The Journal by Tirna</a>
           <nav class="top-nav" aria-label="Primary navigation">
             <a class="active" href="/archive">Archive</a>
-            <a href="#contact">Contact</a>
+            <a href="/contact">Contact</a>
           </nav>
-          <div class="header-actions">
-            <button class="icon-button" type="button" aria-label="Search">
-              <SearchIcon />
-            </button>
-            <button class="icon-button" type="button" aria-label="Account">
-              <AccountIcon />
-            </button>
-          </div>
         </div>
       </header>
 
@@ -138,8 +75,13 @@ export default define.page(function Archive() {
         <section class="archive-intro">
           <h1>The Vault</h1>
           <p>
-            Explore decades of reporting, deep-dive analysis, and essays. Search
-            by keyword, author, or navigate chronologically below.
+            This page brings together everything I have written in one place,
+            making it easier to explore past posts, revisit older ideas, and
+            follow how my interests and perspectives have developed over time.
+            Whether you are looking for a specific article or simply browsing
+            through my previous posts, the archive is designed to help you
+            navigate the full collection with ease. Every post here is part of
+            an ongoing journey of learning, experimenting, and sharing ideas.
           </p>
         </section>
 
@@ -161,17 +103,13 @@ export default define.page(function Archive() {
             </article>
           ))}
         </section>
-
-        <div class="load-more-row">
-          <button class="load-more-button" type="button">Load More</button>
-        </div>
       </main>
 
       <footer class="site-footer" id="contact">
         <div class="footer-brand">The Journal by Tirna</div>
         <nav class="footer-nav" aria-label="Footer navigation">
           <a href="#">Privacy Policy</a>
-          <a href="#contact">Contact</a>
+          <a href="/contact">Contact</a>
           <a class="active" href="/archive">Archives</a>
         </nav>
         <div class="copyright">

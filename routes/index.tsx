@@ -132,7 +132,7 @@ export default define.page(function Home() {
       <footer class="site-footer" id="contact">
         <div class="footer-brand">The Journal by Tirna</div>
         <nav class="footer-nav" aria-label="Footer navigation">
-          <a href="#">Privacy Policy</a>
+          <a href="/privacy">Privacy Policy</a>
           <a href="/contact">Contact</a>
           <a href="/archive">Archives</a>
         </nav>
